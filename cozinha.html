@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="pt-BR"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Comanda Digital</title><link rel="stylesheet" href="css/style.css"></head>
+<body><header class="topbar">
+      <a href="cozinha.html" class="brand">COMANDA DIGITAL</a>
+      <span class="nav-title">PAINEL DA COZINHA</span><nav class="prototype-nav"><a class="" href="index.html">Login</a><a class="" href="cadastro.html">Cadastro</a><a class=" active" href="cozinha.html">Cozinha</a><a class="" href="mesas.html">Mesas</a><a class="" href="novo-pedido.html">Novo pedido</a></nav></header>
+<main class="page">
+  <h1 class="main-title">Pedidos em andamento</h1>
+  <section class="grid-kitchen">
+    <article class="order-card card selected">
+      <div class="card-title">Mesa 05</div>
+      <div class="status" id="mesa05-status">EM PREPARO</div>
+      <div class="items">2x Hambúrguer • 1x Batata • 1x Refrigerante</div>
+      <button class="btn order-btn" onclick="updateKitchen()">ATUALIZAR</button>
+    </article>
+    <article class="order-card card">
+      <div class="card-title">Mesa 08</div>
+      <div class="status">NOVO PEDIDO</div>
+      <div class="items">1x Pizza • 2x Suco</div>
+      <button class="btn order-btn" onclick="updateKitchen()">ATUALIZAR</button>
+    </article>
+    <article class="order-card card">
+      <div class="card-title">Mesa 12</div>
+      <div class="status">PRONTO</div>
+      <div class="items">3x Prato Executivo</div>
+      <button class="btn order-btn" onclick="showNotice('Pedido finalizado.')">FINALIZADO</button>
+    </article>
+  </section>
+</main>
+<div class="notice"></div>
+<script src="js/app.js"></script></body></html>

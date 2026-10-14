@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="pt-BR"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Comanda Digital</title><link rel="stylesheet" href="css/style.css"></head>
+<body>
+<div class="login-page">
+  <div style="position:absolute;right:28px;top:20px"><nav class="prototype-nav"><a class=" active" href="index.html">Login</a><a class="" href="cadastro.html">Cadastro</a><a class="" href="cozinha.html">Cozinha</a><a class="" href="mesas.html">Mesas</a><a class="" href="novo-pedido.html">Novo pedido</a></nav></div>
+  <div class="login-brand">
+    <div class="brand">COMANDA DIGITAL</div>
+    <div class="subbrand">Acesso o sistema do restaurante</div>
+  </div>
+  <div class="auth-card card">
+    <h1>Entrar</h1>
+    <form id="login-form">
+      <div class="field"><label>E-mail ou usuário</label><input required></div>
+      <div class="field"><label>Senha</label><input type="password" required></div>
+      <div class="auth-actions"><button class="btn full">ENTRAR</button></div>
+    </form>
+    <div class="forgot"><a href="#" onclick="showNotice('Recuperação de senha')">Esqueci minha senha</a></div>
+  </div>
+</div>
+<div class="notice"></div>
+<script src="js/app.js"></script></body></html>
